@@ -1,6 +1,11 @@
+@font-face {
+    font-family: raleway;
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
 *{
     padding: 0;
     margin: 0;
+    font-family: raleway;
 }
 
 body{
@@ -21,8 +26,43 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
+/* titulo da pagina */
+#titulo_principal{
+    font-size: 40px;
+    background-image: linear-gradient(to right,rgba(51, 168, 219, 1),rgba(20, 114, 183, 1));
+
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Paragrafo */
 .texto{
-    font-family: rale;
+    width: 550px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
+    text-align: justify;
+}
+
+
+/* button */
+#banner > button{
+    padding: 19px 91px;   
+
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right,rgba(59, 161, 205, 1),rgba(21, 114, 183, 1)) 1;
+
+    background-color: transparent;
+    color: rgba(49, 168, 221, 1);
+
+    font-size: 25px;
+    font-weight: bolder;
+
+    cursor: pointer;
 }
